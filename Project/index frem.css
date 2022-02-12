@@ -1,0 +1,73 @@
+@media screen and (min-width: 992px) {
+
+    .logo-div{
+        text-align: left;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        transition: 0.4s;
+    }
+
+    nav ul li a:hover {
+        background-color: transparent;
+        transform: scale(1.2);
+        text-decoration: underline;
+        border-radius: 0;
+    }
+
+    /* banner starts */
+
+    #banner-scetion {
+        height: 100vh;
+    }
+
+    .banner-contents {      
+        text-align: center;
+    }
+
+    .banner-contents h1 {
+        width: 700px;
+        font-size: 3.5rem;
+    }
+
+    .banner-contents p {
+        width: 500px;
+        font-size: 2rem;
+    }
+
+    /* banner ends */
+
+    /* footer starts */
+
+    footer p {
+        text-align: left;
+    }
+
+    .social-menus {
+        text-align: right;
+    }
+
+    /* footer ends */
+
+.col-l-1 {width: 8.33%;}
+.col-l-2 {width: 16.66%;}
+.col-l-3 {width: 25%;}
+.col-l-4 {width: 33.33%;}
+.col-l-5 {width: 41.66%;}
+.col-l-6 {width: 50%;}
+.col-l-7 {width: 58.33%;}
+.col-l-8 {width: 66.66%;}
+.col-l-9 {width: 75%;}
+.col-l-10 {width: 83.33%;}
+.col-l-11 {width: 91.66%;}
+.col-l-12 {width: 100%;}
+}

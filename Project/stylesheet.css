@@ -1,0 +1,359 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* for mobile */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* header starts */
+header {
+    background-color: #24a19c;
+    padding: 0% 1%;
+    text-align: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 2s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+/* header ends */
+
+
+
+/* banner-section starts */
+
+#banner-section {
+    background-image: url("banner-image.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-contents {
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-contents h1 {
+    width: 100%;
+    margin: 15px auto;
+    font-size: 3rem;
+    background: rgba(255,255,0,0.884);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Handlee', cursive;
+}
+
+.banner-contents p {
+    width: 300px;
+    margin: 15px auto;
+    background-color: rgb(8,128,0);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.btn {
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(4, 56, 4);
+    color: white;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+/* banner-section starts */
+
+
+/* middle-section starts here */
+
+/* upper section */
+.header{
+    display: flex;
+}
+
+.para{   
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+span{
+    color: tomato;
+}
+
+p{
+    text-align: justify;
+}
+
+.order-btn{
+    padding: 10px 20px;
+    background-image: linear-gradient(tomato,orange);
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.text{
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 120px;
+}
+
+.image{
+    width: 500px;
+    height: 500px;
+    margin-top: 25px;
+}
+
+/* upper section */
+
+/* down section */
+
+.header2{
+    display: flex;
+    background-image: url('shapes/Frame1.png');
+    background-repeat:no-repeat;
+	background-position:center;
+	/* background-attachment:fixed; */
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.image-2 {
+    width: 50%;
+    /* height: 500px; */
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+.text2{
+    width: 80%;
+    margin-right: 50px;
+    margin-top: 200px;
+}
+/* down section */
+
+/* middle-section ends here */
+
+
+/* about us section starts */
+
+#about-us {
+    padding: 1%;
+}
+
+.about-us-contents {
+    text-align: center;
+
+}
+
+.about-us-contents h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.about-us-contents p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* about us section ends */
+
+
+/* food menu section starts */
+#menu-section {
+    padding: 1%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-desc {
+    background: gray;
+}
+
+.item-name {
+    background: green;
+    color: white;
+    padding: 10px;
+}
+
+.item-desc > p {
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* food menu section ends */
+
+
+
+/* footer section starts */
+footer {
+    padding: 1%;
+    color: white;
+    background: #060930;
+}
+
+footer p {
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.social-menus {
+    text-align: center;
+}
+
+.icon-style {
+    color: white;
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0 10px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.icon-style:hover {
+    background-color: gray;
+    transform: scale(1.2);
+}
+/* footer section ends */
+
+@media screen and (min-width: 576px) {
+    
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+
+}
+
+@media screen and (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+
+
+/* font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
